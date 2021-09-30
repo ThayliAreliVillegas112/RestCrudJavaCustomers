@@ -69,7 +69,7 @@ public class Service {
         int salesRepEmployeeNumber = Integer.parseInt(formParams.get("salesRepEmployeeNumber").get(0));
         double creditLimit = Double.parseDouble(formParams.get("creditLimit").get(0));
 
-        Customers customer = new Customers(customerNumber, customerName,contacLastName, contacFirstName,phone,addressLine1, addressLine2,city,state,postalCode,country );
+        Customers customer = new Customers(customerNumber, customerName,contacLastName, contacFirstName,phone,addressLine1, addressLine2,city,state,postalCode,country,salesRepEmployeeNumber,creditLimit  );
         System.out.println(customer);
         return customer;
     }
